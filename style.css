@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: #333;
+  background: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 60px;
+  background: rgba(10, 61, 98, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+.hero {
+  height: 100vh;
+  background: url("caramoan.jpg") center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 70px 90px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.hero-overlay h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  padding: 14px 36px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #1ecbe1;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #17b3c7;
+  transform: translateY(-2px);
+}
+
+.image-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.image-strip img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.section {
+  padding: 90px 60px;
+  text-align: center;
+}
+
+.section.alt {
+  background: #f2fbfd;
+}
+
+.cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card,
+.tour-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.card img,
+.tour-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.card:hover img,
+.tour-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0,0,0,0.55);
+  color: #ffffff;
+  font-size: 1.3rem;
+}
+
+.contact-section {
+  padding: 100px 20px;
+  background: linear-gradient(
+      rgba(0, 50, 80, 0.75),
+      rgba(0, 50, 80, 0.75)
+    ),
+    url("patitinan.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  background: #ffffff;
+  max-width: 520px;
+  width: 100%;
+  padding: 45px;
+  border-radius: 22px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.contact-box h2 {
+  font-size: 2.4rem;
+  color: #00334d;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px 16px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  background: #0088cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #006fa3;
+  transform: translateY(-2px);
+}
+
+.contact-info {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+footer {
+  padding: 30px;
+  background: #012a43;
+  color: #ffffff;
+  text-align: center;
+}
+
+.socials a {
+  margin: 0 12px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 30px;
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .hero-overlay {
+    padding: 40px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.2rem;
+  }
+
+  .image-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Beauty of Camarines Sur</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Sur Haven</div>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="scrollToSection('home')">Home</a></li>
+      <li><a href="#" onclick="scrollToSection('destinations')">Destinations</a></li>
+      <li><a href="#" onclick="scrollToSection('tours')">Tours</a></li>
+      <li><a href="#" onclick="scrollToSection('about')">About</a></li>
+      <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-overlay">
+    <h1>Discover Tropical Paradise</h1>
+    <p>Relax. Explore. Experience Camarines Sur.</p>
+    <button class="btn-primary" onclick="scrollToSection('destinations')">
+      Explore Beaches
+    </button>
+  </div>
+</section>
+
+<section class="image-strip">
+  <img src="patitinan.jpg">
+  <img src="bato.jpg">
+  <img src="lovely.jpg">
+  <img src="siruma.jpg">
+</section>
+
+<section id="destinations" class="section">
+  <h2>Top Beach Destinations</h2>
+  <div class="cards">
+    <div class="card"><img src="islands.jpg"><div class="card-text">Caramoan Islands</div></div>
+    <div class="card"><img src="kiudkad.jpg"><div class="card-text">Kiudkad Resort</div></div>
+    <div class="card"><img src="caloco.jpg"><div class="card-text">Caloco Beach</div></div>
+    <div class="card"><img src="white beach.jpg"><div class="card-text">Patitinan White Beach</div></div>
+    <div class="card"><img src="gota.avif"><div class="card-text">Gota Beach</div></div>
+    <div class="card"><img src="paguriran.jpg"><div class="card-text">Paguriran Island</div></div>
+    <div class="card"><img src="bagodila.jpg"><div class="card-text">Bagodila Beach</div></div>
+    <div class="card"><img src="paniman.jpg"><div class="card-text">Paniman Beach</div></div>
+  </div>
+</section>
+
+<section id="tours" class="section alt">
+  <h2>Beach Tour Packages</h2>
+  <div class="cards">
+    <div class="tour-card">
+      <img src="hopping.jpg">
+      <h3>Island Hopping</h3>
+      <p>10–15 Pax • ₱1,500</p>
+    </div>
+    <div class="tour-card">
+      <img src="snorkeling.jpg">
+      <h3>Snorkeling Adventure</h3>
+      <p>1 Day • ₱500</p>
+    </div>
+    <div class="tour-card">
+      <img src="hotel.jpg">
+      <h3>Hotel & Amenities</h3>
+      <p>2 Days • ₱2,500</p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Sur Haven</h2>
+  <p>
+    Sur Haven is a premium travel service showcasing the best tropical destinations
+    in Camarines Sur. We offer safe, curated, and unforgettable travel experiences.
+  </p>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="contact-box">
+    <h2>Get in Touch</h2>
+    <p class="contact-subtitle">
+      Plan your next beach adventure with Sur Haven
+    </p>
+
+    <form class="contact-form" action="https://formspree.io/f/xeeonral" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="New Sur Haven Inquiry">
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <span>📧 macamu@gbox.ncf.edu.ph</span>
+      <span>📞 +63 970 944 1635</span>
+    </div>
+  </div>
+</section>
+
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Sur Haven Travel</p>
+  <div class="socials">
+    <a href="#">Facebook</a>
+    <a href="#">Instagram</a>
+    <a href="#">Twitter</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
